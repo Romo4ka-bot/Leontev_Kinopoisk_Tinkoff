@@ -56,10 +56,6 @@ class FilmListFragment : BaseFragment() {
             backImageView.setOnClickListener {
                 onSearchGone()
             }
-
-            searchView.queryHint = "Поиск"
-            searchView.isIconified = false
-            searchView.onActionViewExpanded()
         }
 
         initObserve()
@@ -78,14 +74,14 @@ class FilmListFragment : BaseFragment() {
         viewBinding.toolbar.title = EMPTY_STRING
         viewBinding.searchImageView.isVisible = false
         viewBinding.backImageView.isVisible = true
-        viewBinding.searchView.isVisible = true
+        viewBinding.filmList.isVisible = false
     }
 
     private fun onSearchGone() {
         viewBinding.toolbar.title = resources.getString(R.string.popular_text)
         viewBinding.searchImageView.isVisible = true
         viewBinding.backImageView.isVisible = false
-        viewBinding.searchView.isVisible = false
+        viewBinding.filmList.isVisible = true
     }
 
     private fun onItemClick(id: Long) {

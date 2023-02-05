@@ -25,4 +25,10 @@ class FilmListViewModel @Inject constructor(
             })
         }
     }
+
+    fun loadFilm() {
+        viewModelScope.launch {
+            mapFilmToFilmModel(filmUseCase.getFilm())
+        }
+    }
 }

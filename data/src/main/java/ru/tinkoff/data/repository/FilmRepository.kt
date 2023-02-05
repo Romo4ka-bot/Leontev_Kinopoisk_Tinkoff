@@ -52,4 +52,13 @@ class FilmRepository @Inject constructor(
             )
         )
     }
+
+    fun getFilm(): FilmEntity {
+        return FilmEntity(
+            4370148,
+            "Чебурашка",
+            listOf("комедия", "семейный"),
+            "https://kinopoiskapiunofficial.tech/images/posters/kp/4370148.jpg"
+        )
+    }
 }

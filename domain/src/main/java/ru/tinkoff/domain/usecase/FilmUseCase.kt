@@ -12,4 +12,8 @@ class FilmUseCase @Inject constructor(
     suspend fun getFilmList(): List<Film> {
         return filmRepository.getFilmList().map { mapFilmEntityToFilm(it) }
     }
+
+    suspend fun getFilm(): Film {
+        return mapFilmEntityToFilm(filmRepository.getFilm())
+    }
 }
