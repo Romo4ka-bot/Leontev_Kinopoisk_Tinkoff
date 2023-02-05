@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/x1_5">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="64dp"
+                android:layout_margin="@dimen/x2"
+                app:cardCornerRadius="5dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/filmImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_background" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/x9"
+                android:layout_marginTop="@dimen/x3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/filmTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxWidth="182dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:text="Изгой-один: Звёздные войны - лучший фильм" />
+
+                <TextView
+                    android:id="@+id/filmGenreTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x1"
+                    android:textSize="14sp"
+                    tools:text="Фантастика 2016" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/addFavoriteImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/x3_5"
+                android:layout_marginEnd="@dimen/x2"
+                android:src="@drawable/ic_favourite" />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

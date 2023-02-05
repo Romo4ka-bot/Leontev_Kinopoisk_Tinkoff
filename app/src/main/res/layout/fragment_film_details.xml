@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/filmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="536dp"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x4"
+            android:layout_marginTop="@dimen/x2_5"
+            android:layout_marginEnd="@dimen/x6"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:text="@string/formated_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x4"
+            android:layout_marginTop="@dimen/x2"
+            android:layout_marginEnd="@dimen/x4"
+            android:textSize="14sp"
+            tools:text="Сопротивление собирает отряд для выполнения особой миссии - надо выкрасть чертежи самого совершенного и мертоносного оружия Империи. Не всем суждено вернуться домой, но герои готовы к этому, ведь на кону судьба Галактики" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x4"
+            android:layout_marginTop="@dimen/x2_5"
+            android:layout_marginEnd="@dimen/x4"
+            android:textSize="14sp"
+            tools:text="Жанры: фантастика, приключения" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/x4"
+            android:layout_marginTop="@dimen/x1"
+            android:layout_marginEnd="@dimen/x4"
+            android:textSize="14sp"
+            tools:text="Страны: США" />
+    </LinearLayout>
+</ScrollView>
